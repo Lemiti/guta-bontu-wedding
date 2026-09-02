@@ -56,16 +56,16 @@ export const weddingContent: Record<Language, TranslationContent> = {
     heroNames: "Guta & Bontu",
     date: "October 11, 2026",
     verse: '"This is the day the Lord has made; let us rejoice and be glad in it." - Psalm 118:24',
-    inviteText: "With great respect and joy, we invite you to celebrate our union in the covenant of marriage.",
+    inviteText: "With our respectful greetings, God willing, as our wedding ceremony will be held on Sunday, October 11, 2026 at Hawassa Hiteta Muluwengel Church, we cordially invite you to share in our joy by joining us at the reception lunch prepared at Haile Resort Hawassa on this day starting at 12:00 PM.",
     tapSeal: "TAP SEAL TO OPEN",
     rsvpButton: "RSVP Now",
 
     // Event Details
     ceremonyTitle: "Wedding Ceremony",
-    ceremonyPlace: "Hawassa Mulu Wengel Church",
+    ceremonyPlace: "Hawassa Hiteta Muluwengel Church",
     ceremonyTime: "Sunday, Oct 11, 2026 | 12:00 PM (6:00 LT)",
 
-    receptionTitle: "Reception Dinner",
+    receptionTitle: "Reception Lunch",
     receptionPlace: "Haile Resort Hawassa",
     receptionTime: "Following the ceremony",
 
@@ -87,11 +87,11 @@ export const weddingContent: Record<Language, TranslationContent> = {
     // Compatibility aliases
     names: "Guta & Bontu",
     date_short: "October 11, 2026",
-    welcome: "With great respect and joy, we invite you to celebrate our union in the covenant of marriage.",
+    welcome: "With our respectful greetings, God willing, as our wedding ceremony will be held on Sunday, October 11, 2026 at Hawassa Hiteta Muluwengel Church, we cordially invite you to share in our joy by joining us at the reception lunch prepared at Haile Resort Hawassa on this day starting at 12:00 PM.",
     ceremony_title: "Wedding Ceremony",
-    ceremony_place: "Hawassa Mulu Wengel Church",
+    ceremony_place: "Hawassa Hiteta Muluwengel Church",
     ceremony_time: "Sunday, Oct 11, 2026 | 12:00 PM (6:00 LT)",
-    reception_title: "Reception Dinner",
+    reception_title: "Reception Lunch",
     reception_place: "Haile Resort Hawassa",
     reception_time: "Following the ceremony",
     rsvp_title: "Confirm Your Attendance",
@@ -112,16 +112,16 @@ export const weddingContent: Record<Language, TranslationContent> = {
     heroNames: "የጉታ እና የቦንቱ ጋብቻ",
     date: "ጥቅምት 1 ቀን 2019 ዓ.ም",
     verse: "እግዚአብሔር የሠራት ቀን ይህች ናት፤ ሐሤትን እናድርግ፥ በእርስዋም ደስ ይበለን። መዝሙረ ዳዊት 118:24",
-    inviteText: "የማክበር ሰላምታችንን እያቀረብን፣ እግዚአብሔር በፈቀደ እና በጎበኘን የጋብቻ ስነ-ስርአት ላይ ተገኝተው ደስታችንን እንዲካፈሉ በአክብሮት ጠርተንዎታል።",
+    inviteText: "የማክበር ሰላምታችንን እያቀረብን፣ እግዚአብሔር በፈቀደ እና ብንኖር የጋብቻ ሥነ-ሥርዓታችን እሁድ ጥቅምት 1 ቀን 2019 ዓ.ም. በሐዋሳ ሒጠታ ሙሉወንጌል ቤተክርስቲያን ስለሚፈጸም፣ በዚህ ዕለት ከቀኑ 6:00 ሰዓት በኃይሌ ሪዞርት ሐዋሳ በተዘጋጀው የምሳ ግብዣ ላይ ተገኝተው የደስታችን ተካፋይ ይሆኑ ዘንድ በአክብሮት ጠርተንዎታል።",
     tapSeal: "ለማየት ማህተሙን ይጫኑ",
     rsvpButton: "ያሳውቁን (RSVP)",
 
     // Event Details
     ceremonyTitle: "የጋብቻ ስነ-ስርአት",
-    ceremonyPlace: "በሐዋሳ ሙሉወንጌል ቤተክርስቲያን",
+    ceremonyPlace: "በሐዋሳ ሒጠታ ሙሉወንጌል ቤተክርስቲያን",
     ceremonyTime: "እሁድ ጥቅምት 1 ቀን 2019 ዓ.ም | ከቀኑ 6፡00 ሰዓት",
 
-    receptionTitle: "የራት ግብዣ",
+    receptionTitle: "የምሳ ግብዣ",
     receptionPlace: "ሀይሌ ሪዞርት ሐዋሳ",
     receptionTime: "ከሰርጉ ስነ-ስርአት በመቀጠል",
 
@@ -143,11 +143,11 @@ export const weddingContent: Record<Language, TranslationContent> = {
     // Compatibility aliases
     names: "የጉታ እና የቦንቱ ጋብቻ",
     date_short: "ጥቅምት 1 ቀን 2019 ዓ.ም",
-    welcome: "የማክበር ሰላምታችንን እያቀረብን፣ እግዚአብሔር በፈቀደ እና በጎበኘን የጋብቻ ስነ-ስርአት ላይ ተገኝተው ደስታችንን እንዲካፈሉ በአክብሮት ጠርተንዎታል።",
+    welcome: "የማክበር ሰላምታችንን እያቀረብን፣ እግዚአብሔር በፈቀደ እና ብንኖር የጋብቻ ሥነ-ሥርዓታችን እሁድ ጥቅምት 1 ቀን 2019 ዓ.ም. በሐዋሳ ሒጠታ ሙሉወንጌል ቤተክርስቲያን ስለሚፈጸም፣ በዚህ ዕለት ከቀኑ 6:00 ሰዓት በኃይሌ ሪዞርት ሐዋሳ በተዘጋጀው የምሳ ግብዣ ላይ ተገኝተው የደስታችን ተካፋይ ይሆኑ ዘንድ በአክብሮት ጠርተንዎታል።",
     ceremony_title: "የጋብቻ ስነ-ስርአት",
-    ceremony_place: "በሐዋሳ ሙሉወንጌል ቤተክርስቲያን",
+    ceremony_place: "በሐዋሳ ሒጠታ ሙሉወንጌል ቤተክርስቲያን",
     ceremony_time: "እሁድ ጥቅምት 1 ቀን 2019 ዓ.ም | ከቀኑ 6፡00 ሰዓት",
-    reception_title: "የራት ግብዣ",
+    reception_title: "የምሳ ግብዣ",
     reception_place: "ሀይሌ ሪዞርት ሐዋሳ",
     reception_time: "ከሰርጉ ስነ-ስርአት በመቀጠል",
     rsvp_title: "መገኘትዎን ያረጋግጡ",
@@ -166,16 +166,16 @@ export const weddingContent: Record<Language, TranslationContent> = {
   om: {
     heroPrefix: "Cidha",
     heroNames: "Guta fi Bontu",
-    date: "Onkololeessa 11, 2026",
-    verse: '"Guyyaan kun guyyaa Gooftaan uumeedha; itti haa gammadnu, haa ililchinu." - Faarfannaa 118:24',
-    inviteText: "Kabajaa fi gammachuu guddaan, cidha gaa'ela keenya irratti argamtanii akka nu waliin gammaddan isin afeerra.",
+    date: "Onkololeessa 1, 2019",
+    verse: '"Guyyaan Waaqayyo dhaabe isa kana, kottaa isatti in gammannaa, itti gammaduu keenyas in dhageessifnaa!" - Macaafa Faarfannaa 118:24',
+    inviteText: "Kabaja guddaadhaan nagaa keenya isiniif dhiyeessaa, Yoo fedhaaf jaalala Waaqayyo ta'e sirna gaa'ela keenya Dilbata Onkololeessa 1 bara 2019 woldaa Guutuu Wongeelaa Hiixata Hawasaatti waan raawwatamuuf, guyuma kana sa'aa 6:00tti Hootela Riizortii Hayilee Hawasaatti, afeeraa laaqanaa qopheessine irratti argamtanii hirmaattota gammachuu keenyaa akka taatan kabajaan waamicha isinii taasifneerraa.",
     tapSeal: "BANUUF MALLATTOO TUQAA",
     rsvpButton: "Beeksisaa (RSVP)",
 
     // Event Details
     ceremonyTitle: "Sirna Gaa'elaa",
-    ceremonyPlace: "Woldaa Guutuu Wongeelaa Hiixatatti",
-    ceremonyTime: "Dilbata Onkololeessa 11, 2026 | sa'aa 6:00tti",
+    ceremonyPlace: "Woldaa Guutuu Wongeelaa Hiixata Hawasaatti",
+    ceremonyTime: "Dilbata Onkololeessa 1, 2019 | sa'aa 6:00tti",
 
     receptionTitle: "Afeeraa Laaqanaa",
     receptionPlace: "Hootela Riizortii Hayilee Hawasaatti",
@@ -198,11 +198,11 @@ export const weddingContent: Record<Language, TranslationContent> = {
 
     // Compatibility aliases
     names: "Guta fi Bontu",
-    date_short: "Onkololeessa 11, 2026",
-    welcome: "Kabajaa fi gammachuu guddaan, cidha gaa'ela keenya irratti argamtanii akka nu waliin gammaddan isin afeerra.",
+    date_short: "Onkololeessa 1, 2019",
+    welcome: "Kabaja guddaadhaan nagaa keenya isiniif dhiyeessaa, Yoo fedhaaf jaalala Waaqayyo ta'e sirna gaa'ela keenya Dilbata Onkololeessa 1 bara 2019 woldaa Guutuu Wongeelaa Hiixata Hawasaatti waan raawwatamuuf, guyuma kana sa'aa 6:00tti Hootela Riizortii Hayilee Hawasaatti, afeeraa laaqanaa qopheessine irratti argamtanii hirmaattota gammachuu keenyaa akka taatan kabajaan waamicha isinii taasifneerraa.",
     ceremony_title: "Sirna Gaa'elaa",
-    ceremony_place: "Woldaa Guutuu Wongeelaa Hiixatatti",
-    ceremony_time: "Dilbata Onkololeessa 11, 2026 | sa'aa 6:00tti",
+    ceremony_place: "Woldaa Guutuu Wongeelaa Hiixata Hawasaatti",
+    ceremony_time: "Dilbata Onkololeessa 1, 2019 | sa'aa 6:00tti",
     reception_title: "Afeeraa Laaqanaa",
     reception_place: "Hootela Riizortii Hayilee Hawasaatti",
     reception_time: "Sirna gaa'elaa booda",

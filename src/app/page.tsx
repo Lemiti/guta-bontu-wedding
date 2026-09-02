@@ -141,33 +141,22 @@ function InvitationContent() {
           isOpened ? "opacity-100 translate-y-0" : "opacity-0 translate-y-12 pointer-events-none"
         }`}
       >
-        <main className="relative w-full bg-[#FDFBF7] shadow-2xl rounded-sm border border-[#E5E0D8] overflow-hidden">
+        <main className="relative z-0 isolate w-full bg-[#FDFBF7] shadow-2xl rounded-sm border border-[#E5E0D8] overflow-hidden">
           
-          {/* Floral Corner Decoration (Top-Right) */}
-          <div className="absolute top-0 right-0 w-44 md:w-64 h-auto opacity-85 pointer-events-none z-20">
+          {/* Floral Corner Decoration (Top-Right) - Fades out starting from THE WEDDING OF */}
+          <div className="absolute top-0 right-0 w-44 md:w-64 h-auto pointer-events-none z-10 opacity-70 [mask-image:linear-gradient(215deg,black_0%,black_15%,transparent_65%)] [-webkit-mask-image:linear-gradient(215deg,black_0%,black_15%,transparent_65%)]">
             <Image 
               src="/Flower.png" 
               alt="Floral Decoration" 
               width={350} 
               height={450} 
-              className="object-contain"
+              className="object-contain pointer-events-none"
               priority
             />
           </div>
 
-          {/* Floral Corner Decoration (Bottom-Left) */}
-          <div className="absolute bottom-0 left-0 w-44 md:w-64 h-auto opacity-75 pointer-events-none z-20 rotate-180">
-            <Image 
-              src="/Flower.png" 
-              alt="Floral Decoration" 
-              width={350} 
-              height={450} 
-              className="object-contain"
-            />
-          </div>
-
           {/* HERO BANNER SECTION */}
-          <section className="relative w-full h-[360px] md:h-[480px] flex items-center justify-center overflow-hidden">
+          <section className="relative z-0 w-full h-[360px] md:h-[480px] flex items-center justify-center overflow-hidden">
             <Image
               src="/images/hero-bg.jpg"
               alt="Lake Hawassa Sunset"
@@ -175,13 +164,14 @@ function InvitationContent() {
               className="object-cover object-center"
               priority
             />
-            <div className="absolute inset-0 bg-gradient-to-t from-[#FDFBF7] via-black/40 to-black/60" />
+            {/* Gradient overlay fading starting from THE WEDDING OF */}
+            <div className="absolute inset-0 bg-gradient-to-b from-black/20 via-black/60 via-30% to-[#FDFBF7]" />
             
             <motion.div 
               initial="hidden" 
               animate={isOpened ? "visible" : "hidden"} 
               variants={fadeUp}
-              className="relative z-10 text-center text-white px-6 mt-6"
+              className="relative z-20 text-center text-white px-6 mt-6"
             >
               {content.heroPrefix && (
                 <p className="text-sm md:text-base tracking-[0.35em] text-[#D4AF37] mb-3 uppercase font-semibold drop-shadow-md">
@@ -204,6 +194,7 @@ function InvitationContent() {
               whileInView="visible" 
               viewport={{ once: true }} 
               variants={fadeUp}
+              className="relative z-10"
             >
               <Heart className="mx-auto mb-6 text-[#D4AF37]" size={36} strokeWidth={1.5} />
               
@@ -302,13 +293,25 @@ function InvitationContent() {
           </section>
 
           {/* RSVP SECTION */}
-          <section id="rsvp" className="relative z-10 py-16 md:py-24 px-6 md:px-16 bg-[#0B132B] text-white text-center">
+          <section id="rsvp" className="relative z-10 py-16 md:py-24 px-6 md:px-16 bg-[#0B132B] text-white text-center overflow-hidden">
+            
+            {/* Floral Corner Decoration (Bottom-Left, sits behind RSVP form div) */}
+            <div className="absolute bottom-0 left-0 w-48 md:w-72 h-auto pointer-events-none z-0 opacity-40 rotate-180">
+              <Image 
+                src="/Flower.png" 
+                alt="Floral Decoration" 
+                width={350} 
+                height={450} 
+                className="object-contain pointer-events-none"
+              />
+            </div>
+
             <motion.div 
               initial="hidden" 
               whileInView="visible" 
               viewport={{ once: true }} 
               variants={fadeUp} 
-              className="max-w-xl mx-auto"
+              className="max-w-xl mx-auto relative z-10"
             >
               <h2 className="text-3xl md:text-5xl text-[#D4AF37] font-serif mb-4">
                 {content.rsvpTitle}
@@ -318,7 +321,7 @@ function InvitationContent() {
               </p>
               
               {!rsvpSubmitted ? (
-                <form onSubmit={handleRsvpSubmit} className="space-y-6 text-left bg-white/5 p-6 md:p-8 rounded-xl border border-white/10 backdrop-blur-sm shadow-xl">
+                <form onSubmit={handleRsvpSubmit} className="relative z-10 space-y-6 text-left bg-[#0E162D] p-6 md:p-8 rounded-xl border border-white/15 backdrop-blur-md shadow-2xl">
                   <div>
                     <label className="block text-xs uppercase tracking-widest mb-2 text-gray-300 font-semibold">
                       {content.formName}
@@ -337,7 +340,7 @@ function InvitationContent() {
                     <label className="block text-xs uppercase tracking-widest mb-3 text-gray-300 font-semibold">
                       {content.formAttending}
                     </label>
-                    <div className="grid grid-cols-2 gap-4">
+                    <div className="grid grid-cols-2 gap-4 relative z-10">
                       <label className={`flex items-center gap-3 p-3 rounded-lg border cursor-pointer transition-all ${
                         attending === "yes" 
                           ? "border-[#D4AF37] bg-[#D4AF37]/15 text-white" 
@@ -349,7 +352,7 @@ function InvitationContent() {
                           value="yes" 
                           checked={attending === "yes"}
                           onChange={() => setAttending("yes")}
-                          className="accent-[#D4AF37] w-4 h-4" 
+                          className="accent-[#D4AF37] w-4 h-4 cursor-pointer" 
                         />
                         <span className="text-sm md:text-base">{content.formYes}</span>
                       </label>
@@ -365,7 +368,7 @@ function InvitationContent() {
                           value="no" 
                           checked={attending === "no"}
                           onChange={() => setAttending("no")}
-                          className="accent-[#D4AF37] w-4 h-4" 
+                          className="accent-[#D4AF37] w-4 h-4 cursor-pointer" 
                         />
                         <span className="text-sm md:text-base">{content.formNo}</span>
                       </label>
@@ -380,7 +383,7 @@ function InvitationContent() {
                   </button>
                 </form>
               ) : (
-                <div className="bg-white/10 p-8 rounded-2xl border border-[#D4AF37]/40 text-center space-y-6 shadow-2xl">
+                <div className="relative z-10 bg-[#0E162D] p-8 rounded-2xl border border-[#D4AF37]/40 text-center space-y-6 shadow-2xl backdrop-blur-md">
                   <CheckCircle2 className="mx-auto text-[#D4AF37]" size={48} />
                   <h3 className="text-2xl md:text-3xl font-serif text-[#D4AF37]">
                     {content.successTitle}
